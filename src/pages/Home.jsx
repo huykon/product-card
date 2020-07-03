@@ -75,7 +75,7 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
+  const queryChangeST = () => {
     sizes = document.querySelectorAll(".size");
     colors = document.querySelectorAll(".color");
     shoes = document.querySelectorAll(".shoe");
@@ -84,8 +84,13 @@ const Home = () => {
 
     colors.forEach(color => color.addEventListener("click", changeColor));
     sizes.forEach(size => size.addEventListener("click", changeSize));
+  }
+
+  useEffect(() => {
+    queryChangeST();
     changeHeight();
-  }, []);
+  });
+
   window.addEventListener("resize", changeHeight);
 
   return (
