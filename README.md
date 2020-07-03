@@ -52,3 +52,6 @@ npm start
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/huykon/product-card/blob/master/LICENSE) file for details
+
+### Workflow status
+![CI/CD](https://github.com/huykon/product-card/workflows/CI/CD/badge.svg)
